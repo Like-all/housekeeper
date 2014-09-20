@@ -34,3 +34,12 @@ Prebuilt binaries for various operating systems will be available soon.
 + Invoke housekeeper: `./housekeeper recipe-name` (housekeeper omits '.json' extension)
 + Housekeeper will ask you about your http recipe repository URL
 + Configuration is done!
+
+####Dotfiles
+
+All dotfiles should be placed in `http://your-repo.url/dotfiles`.
+
+####Supported platforms
+
++ Linux
+    + Debian-based distros
