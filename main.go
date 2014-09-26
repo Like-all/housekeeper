@@ -31,11 +31,11 @@ func main() {
         }
     }
 
-    for i := range recipe.Dotfiles {
-        getDotfile(CfgParams.Mirror, recipe.Dotfiles[i])
-    }
-
     for i := range recipe.Postinstall {
         shell(recipe.Postinstall[i])
+    }
+
+    for i := range recipe.Dotfiles {
+        getDotfile(CfgParams.Mirror, recipe.Dotfiles[i])
     }
 }
