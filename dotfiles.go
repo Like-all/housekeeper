@@ -26,7 +26,7 @@ func getDotfile(mirror, dotfilePath string) () {
     dotfileBody := buf.String()
 
     usr, _ := user.Current()
-    os.MkdirAll(filepath.Dir(usr.HomeDir + "/" + dotfilePath), 0600)
+    os.MkdirAll(filepath.Dir(usr.HomeDir + "/" + dotfilePath), 0700)
 
     dotfile, err := os.Create(usr.HomeDir + "/" + dotfilePath)
     if err != nil {
